@@ -119,6 +119,7 @@ namespace Bai2KPDL
                     foreach (var c in tam)
                     {
                         float kc = (float)Math.Sqrt((c.x - item.Value.x) * (c.x - item.Value.x) + (c.y - item.Value.y) * (c.y - item.Value.y));
+                        //float kc = (float)Math.Abs((c.x - item.Value.x) + (c.y - item.Value.y) );
                         Console.Write(Math.Round(kc, 2).ToString().PadRight(10));
 
                         if (min > kc)
