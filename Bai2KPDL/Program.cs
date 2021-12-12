@@ -111,7 +111,7 @@ namespace Bai2KPDL
             {
                 Console.Write($"\n\nVong {vong++}");
                 bool isBreak = true;
-                foreach (var item in dic)
+                foreach (var item in dic.OrderBy(x=>x.Key))
                 {
                     Cum cum = null;
                     float min = 9999;
