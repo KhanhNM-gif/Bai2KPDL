@@ -111,7 +111,7 @@ namespace Bai2KPDL
             {
                 Console.Write($"\n\nVong {vong++}");
                 bool isBreak = true;
-                foreach (var item in dic.OrderBy(x=>x.Key))
+                foreach (var item in dic.OrderBy(x => x.Key))
                 {
                     Cum cum = null;
                     float min = 9999;
@@ -119,7 +119,7 @@ namespace Bai2KPDL
                     foreach (var c in tam)
                     {
                         float kc = (float)Math.Sqrt((c.x - item.Value.x) * (c.x - item.Value.x) + (c.y - item.Value.y) * (c.y - item.Value.y));
-                        //float kc = (float)Math.Abs((c.x - item.Value.x) + (c.y - item.Value.y) );
+                        //float kc = (float)Math.Abs(c.x - item.Value.x) + (float)Math.Abs(c.y - item.Value.y);
                         Console.Write(Math.Round(kc, 2).ToString().PadRight(10));
 
                         if (min > kc)
